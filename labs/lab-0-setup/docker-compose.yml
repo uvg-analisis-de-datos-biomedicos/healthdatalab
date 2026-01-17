@@ -16,7 +16,8 @@ services:
   jupyter:
     image: jupyter/scipy-notebook:latest
     environment:
-      JUPYTER_ENABLE_LAB: "yes"
+      JUPYTER_ENABLE_LAB: "yes" 
+      
     ports:
       - "8888:8888"
     depends_on:
