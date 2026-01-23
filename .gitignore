@@ -9,3 +9,6 @@
 # OS junk
 .DS_Store
 Thumbs.db
+
+sql/init.sql
+*.ipynb_checkpoints
