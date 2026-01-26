@@ -1,3 +1,5 @@
+-- Checkpoint 1: EHR schema created
+
 -- Patients: identidad longitudinal
 CREATE TABLE IF NOT EXISTS patients (
   subject_id SERIAL PRIMARY KEY,
