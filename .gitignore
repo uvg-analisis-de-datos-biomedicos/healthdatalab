@@ -1,0 +1,11 @@
+# Jupyter / VS Code autosave
+**/.ipynb_checkpoints/
+**/*-checkpoint.*
+
+# Python cache
+**/__pycache__/
+**/*.pyc
+
+# OS junk
+.DS_Store
+Thumbs.db
