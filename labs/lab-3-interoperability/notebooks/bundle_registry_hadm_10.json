@@ -1,0 +1,26 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "3",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/2"
+        },
+        "actualPeriod": {
+          "start": "2101-03-20T22:00:00Z",
+          "end": "2101-03-28T10:00:00Z"
+        }
+      }
+    }
+  ]
+}
