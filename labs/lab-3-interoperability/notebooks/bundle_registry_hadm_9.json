@@ -1,0 +1,68 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "7",
+        "gender": "male",
+        "birthDate": "1959-10-30"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "9",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/7"
+        },
+        "actualPeriod": {
+          "start": "2101-05-14T07:00:00Z",
+          "end": "2101-05-20T15:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "31",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6690-2",
+              "display": "Leukocytes [#/volume] in Blood"
+            }
+          ],
+          "text": "White Blood Cells"
+        },
+        "subject": {
+          "reference": "Patient/7"
+        },
+        "encounter": {
+          "reference": "Encounter/9"
+        },
+        "effectiveDateTime": "2101-05-15T07:00:00Z",
+        "valueQuantity": {
+          "value": 10.2,
+          "unit": "10^9/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10^9/L"
+        }
+      }
+    }
+  ]
+}
