@@ -24,6 +24,9 @@ VALUES
   ((SELECT system_id FROM terminology_systems WHERE system_name='ICD-10'), 'J18.9',  'Pneumonia, unspecified organism', 'ICD-10', 'diagnosis'),
   ((SELECT system_id FROM terminology_systems WHERE system_name='ICD-10'), 'T14.90', 'Injury, unspecified, initial encounter', 'ICD-10', 'diagnosis'),
   ((SELECT system_id FROM terminology_systems WHERE system_name='ICD-10'), 'N39.0',  'Urinary tract infection, site not specified','ICD-10', 'diagnosis'),
+    ((SELECT system_id FROM terminology_systems WHERE system_name='ICD-10'), 'E86.0',  'Dehydration', 'ICD-10', 'diagnosis'),
+  ((SELECT system_id FROM terminology_systems WHERE system_name='ICD-10'), 'I50.9',  'Heart failure, unspecified', 'ICD-10', 'diagnosis'),
+  ((SELECT system_id FROM terminology_systems WHERE system_name='ICD-10'), 'K35.80', 'Acute appendicitis', 'ICD-10', 'diagnosis')
 ON CONFLICT (system_id, code) DO NOTHING;
 
 -- 3) Conceptos LOINC (mini)
